@@ -13,14 +13,12 @@ struct Color {
 };
 
 int main(){
+    vector<Color> colors; // Vector to store Color structs
     // Initial test
-    Color tempStruct;
-    tempStruct.red = 100;
-    tempStruct.green = 100;
-    tempStruct.blue = 100;
-    cout << "Test struct's data: " << endl;
-    cout << "Red: " << tempStruct.red << endl;
-    cout << "Green: " << tempStruct.green << endl;
-    cout << "Blue: " << tempStruct.blue << endl;
+    Color tempStruct = {100,150,200};
+    colors.push_back(tempStruct); 
+    cout << "Red: " << colors[0].red << ", Green: " << colors[0].green << 
+    ", Blue: " << colors[0].blue << endl;
+ 
     return 0;
 }
